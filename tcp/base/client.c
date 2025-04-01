@@ -7,15 +7,6 @@
 #define PORT 8080
 #define BUFFER_SIZE 1024
 
-int reverse(int n){
-    int sum = 0;
-    while(n>0){
-        int digit = n%10;
-        sum = sum*10 + digit;
-        n = n/10;
-    }
-}
-
 int main(){
     int client;
     struct sockaddr_in address;
